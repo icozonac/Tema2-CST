@@ -1,0 +1,56 @@
+.card {
+  padding: 1rem 2rem;
+
+  width: 300px;
+  height: 450px;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(54, 16, 143), rgb(158, 47, 231)) 1;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.068);
+  box-shadow: 0 2rem 3rem 0 rgba(39, 38, 38, 0.2);
+}
+.element-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 220px;
+  height: 230px;
+  mix-blend-mode: multiply;
+  border-radius: 8px;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn-buy {
+  padding: 15px 10px;
+  background-color: rgb(86, 6, 192);
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: darken($color: rgb(86, 6, 192), $amount: 5%);
+}
+
+.name {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: rgb(86, 6, 192);
+}
+.description {
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,9 @@
+<div class="bg">
+  <div class="content-container container">
+    <app-card
+      *ngFor="let card of cards"
+      [name]="card.name"
+      [photoUrl]="card.photoUrl"
+    ></app-card>
+  </div>
+</div>
