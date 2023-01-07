@@ -1,12 +1,15 @@
 .bg {
-  padding: 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  padding: 3rem 5rem;
   background-image: linear-gradient(
     to bottom,
-    #ffffff,
     #d6caf0,
     #b595dd,
     #8c64e9,
-    #430fa4
+    #5517c9
   );
   .content-container {
     display: grid;

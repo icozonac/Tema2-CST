@@ -1,0 +1,12 @@
+<div class="container">
+  <p>How many pieces do you want?</p>
+
+  <input
+    type="number"
+    [(ngModel)]="inputValue"
+    (ngModelChange)="onInputValueChange($event)"
+    min="1"
+    max="10"
+    required
+  />
+</div>

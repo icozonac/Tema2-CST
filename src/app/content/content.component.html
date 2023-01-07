@@ -1,5 +1,6 @@
 <div class="bg">
-  <div class="content-container container">
+  <router-outlet name="content"></router-outlet>
+  <div class="content-container">
     <app-card
       *ngFor="let card of cards"
       [name]="card.name"

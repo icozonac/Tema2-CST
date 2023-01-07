@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss'],
+  hostDirectives: [RouterOutlet]
 })
 export class ContentComponent {
   cards = [
@@ -53,4 +55,5 @@ export class ContentComponent {
       photoUrl: './assets/pictures/elements/shorts.webp',
     },
   ];
+
 }
