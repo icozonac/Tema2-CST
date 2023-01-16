@@ -12,9 +12,6 @@ export class CardComponent implements OnInit {
   @Input() name: string = 'default';
   @Input() photoUrl: string = '';
 
-  //Trebuie sa pun valoarea inputului pentru afisarea corecta a modalului de succes
-  inputValue: number = 1;
-
   constructor(private modalService: NzModalService) {}
 
   ngOnInit(): void {}
@@ -23,13 +20,13 @@ export class CardComponent implements OnInit {
     this.modalService.create({
       nzContent: ModalComponent,
       nzTitle: this.name,
-      nzOnOk: () => {
+      nzOnOk: (e: any) => {
         // Open the success modal and pass the input value to the success modal
         this.modalService.success({
           nzTitle: 'Success!',
           nzContent: SuccessModalComponent,
           nzComponentParams: {
-            inputValue: this.inputValue,
+            inputValue: e.inputValue,
           },
         });
       },
