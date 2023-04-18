@@ -1,1 +1,1 @@
-Deployed here https://tema2-a57zgdv3y-icozonac.vercel.app/
+Deployed here https://tema2-2q5q0ovss-icozonac.vercel.app/
